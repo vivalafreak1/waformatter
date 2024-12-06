@@ -1,6 +1,8 @@
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="bg-[#128C7E] text-white p-8">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -28,7 +30,10 @@ export default function Footer() {
 
         {/* Copyright Section */}
         <div className="text-center md:text-right mt-4 md:mt-0">
-          <p>&copy; 2024 WhatsApp Message Converter. All Rights Reserved.</p>
+          <p>
+            &copy; {currentYear} WhatsApp Message Converter. <br />
+            Created by Arief Taufik Rahman.
+          </p>
         </div>
       </div>
     </footer>
