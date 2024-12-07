@@ -16,7 +16,7 @@ function App() {
         <main className="flex-grow">
           <Suspense
             fallback={
-              <div className="p-6 text-center">
+              <div className="flex items-center justify-center h-64">
                 <ClipLoader color="#128C7E" size={50} />
               </div>
             }
